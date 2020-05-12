@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nicaragua</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- updated j query for fancybox... do I need both? -->
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <!-- stylesheet and script for fancybox -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/Jquery.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to Nicaragua</h1>
+      </header>
+      <div class="description">
+        As my native country, Nicaragua was once a very beautiful vacation destination. I look back to photos from this trip and am grateful I got to enjoy its beauty before it became overrun by the corrupt government. I hope this vacation website offers you a different, more positive perspective on Nicaragua.
+      </div>
+      <div class="grid">
+        <div class="history">
+          <h2>About Nicaragua</h2>
+          <p class="histtext">
+            <p id="know"><em>Must-Know Facts</em></p>
+            <ul class="histtext">
+              <li>Nicaragua is located in the heart of Central America.</li>
+              <li>Nickname: “The Land of Lakes and Volcanoes.”</li>
+              <li>Country name meaning: “Here united with the water.”</li>
+              <li>Main Language: Spanish</li>
+              <li>Its three regions vary greatly in weather, geography, and population.</li>
+              <li>Region names: Pacific, Central, and Caribbean.</li>
+              <li>Rhythmic marimbas and folkloric dances give vibrancy to fiestas across the country.</li>
+              <li>Historical Figure: Poet, Rubén Darío, father of Spanish-American literary movement, Modernism.</li>
+            </ul>
+          </p>
+        </div>
+
+
+        <div class="histphoto">
+
+          <div>
+            <a data-fancybox="nica" data-caption="Concepción volcano on Ometepe – Rivas" href="img/big/1.jpg"> <img src="img/small/1.jpg" alt="volcano"> </a>
+            <a data-fancybox="nica" data-caption="Cloud forest of Mombacho" href="img/big/2.jpg"> <img src="img/small/2.jpg" alt="forest"> </a>
+            </div>
+
+            <div>
+              <a data-fancybox="nica" data-caption="Petroglyphs on the slopes of Maderas volcano, Ometepe" href="img/big/3.jpg"> <img src="img/small/3.jpg" alt="petroglyphs"> </a>
+              <a data-fancybox="nica" data-caption="Church of Recollection in León " href="img/big/5.jpg"> <img src="img/small/5.jpg" alt="church"> </a>
+            </div>
+
+            <div>
+              <a data-fancybox="nica" data-caption="Historical centre of Granada, Nicaragua" href="img/big/4.jpg"> <img src="img/small/4.jpg" alt="center"> </a>
+              <a data-fancybox="nica" data-caption="Map of Nicaragua." href="img/big/6.jpg"> <img src="img/small/6.jpg" alt="map"> </a>
+            </div>
+
+        </div>
+
+
+        <div class="photos">
+          <img id="photo" src="" alt="">
+        </div>
+        <div class="dest">
+          <h2>Ranked Must-See Destinations</h2>
+          <div class="accordion">
+          <h3><a id="1" href="">Dest. 1</a></h3>
+          <p>One of the must-see destinations in Nicaragua is Matagalpa, Nicaragua's "Selva Negra". The greenry brings tranquility to all those who visit.</p>
+
+          <h3><a id="2" href="">Dest. 2</a></h3>
+          <p>A cozy corner and very home-like street to visit is San Juan del Sur, Nicaragua.</p>
+
+          <h3><a id="3" href="">Dest. 3</a></h3>
+          <p>High on this list is also Masaya, Nicaragua. One can find in any restaurant in Masaya, the flavorful and traditional "Sopa de Mondongo". </p>
+
+          <h3><a id="4" href="">Dest. 4</a></h3>
+          <p>Before the day is over, one must visit Villa Carlos Fonseca - Playa Masachapa. The black sands come from the active volcanos that surround it.</p>
+
+          <h3><a id="5" href="">Dest. 5</a></h3>
+          <p>To close out your vacation with a beautiful sunset, Plata Masachapa does not disappoint.</p>
+
+          </div>
+          <script type="text/javascript">
+              $(document).ready(function(){
+                var allPanels = $('.accordion > p').hide();
+
+                $('.accordion > h3 > a').click(function() {
+                  allPanels.slideUp();
+                  $(this).parent().next().slideDown();
+                  return false;
+                });
+                $("#1").click(function() {
+                  $("#photo").attr('src','img/2.jpeg');
+                  $("#photo").fadeIn(1000);
+                });
+                $("#2").click(function() {
+                  $("#photo").attr('src','img/3.jpeg');
+                });
+                $("#3").click(function() {
+                  $("#photo").attr('src','img/4.jpeg');
+                });
+                $("#4").click(function() {
+                  $("#photo").attr('src','img/5.jpeg');
+                });
+                $("#5").click(function() {
+                  $("#photo").attr('src','img/6.jpeg');
+                });
+              });
+          </script>
+
+
+
+      </div>
+    </div>
+  </body>
+</html>

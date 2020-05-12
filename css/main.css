@@ -1,0 +1,135 @@
+body {
+  background-color: #f2f2f2;
+  font-family: 'Montserrat', sans-serif;
+  color: #004d99;
+  }
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+
+}
+.container {
+  background-color: #C6DAF3;
+  margin: auto;
+  max-width: 1200px;
+  font-size: 20px;
+
+  }
+div {
+  max-width: 100%;
+}
+header {
+  background-color: #0066B8;
+  max-width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Roboto Slab', serif;
+  padding: 5px;
+  color: white;
+}
+h2, h3 {
+  font-family: 'Roboto Slab', serif;
+  color: #004d99;
+}
+.description {
+  display: block;
+  border: 2px solid #004d99;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow:10px 10px 5px #004d99;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+
+}
+.history {
+  grid-area: history;
+}
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
+.histphoto {
+  grid-area:  histphoto;
+  background-color: #C6DAF3;
+  height: 400px;
+  margin: auto;
+}
+
+.histphoto img{
+align-items: center;
+}
+
+.histtext {
+  margin-left: 50px;
+  margin-right: 120px;
+}
+#know {
+  text-align: center;
+
+}
+.dest {
+  grid-area: dest;
+  margin-right: 100px;
+  margin-left: 50px;
+}
+.accordion {
+  margin: 50px;
+  box-shadow:10px 10px 5px #004d99;
+
+}
+.accordion h3,
+.accordion p {
+  padding: 10px;
+  border: 2px solid #004d99;
+  border-radius: 5px;
+  border-bottom: 0;
+}
+.accordion h3:last-of-type,
+.accordion p:last-of-type {
+  border-bottom: 1px solid #004d99;
+}
+.accordion h3 a,
+.accordion p a {
+  display: block;
+}
+
+.accordion h3 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 18px
+  color: Navy;
+}
+.accordion p {
+  border-top: 0;
+  font-size: 14px;
+  background: #f2f2f2;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.accordion p:last-of-type {
+  border-top: 1px solid white;
+  position: relative;
+  top: -1px;
+}
+.photos {
+  grid-area: photos;
+  margin: auto;
+  height: 400px;
+}
+.grid {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  grid-template-rows: auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+
+
+  grid-template-areas:
+   "history histphoto"
+   "dest photos"
+}
